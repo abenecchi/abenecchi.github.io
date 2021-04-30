@@ -1,3 +1,9 @@
+---
+title: STAT 4280 Final Project
+theme: cayman
+filename: 4280FinalProject.md
+---
+
 <div class="container-fluid main-container">
 
 <div class="fluid-row" id="header">
