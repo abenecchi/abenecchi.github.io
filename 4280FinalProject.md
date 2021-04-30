@@ -20,7 +20,7 @@ filename: 4280FinalProject.md
 
 ## Data Set Title
 
-    ## Feather River monthly flow rate in cubic meters/s at Oroville, California, Oct.1902 – Sep. 1961
+### Feather River monthly flow rate in cubic meters/s at Oroville, California, Oct.1902 – Sep. 1961
 
 </div>
 
