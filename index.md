@@ -7,5 +7,5 @@ filename: index.md
 
 [Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/benecchiAndrewResume2201.pdf)
 
-[Fake news classifier](https://github.com/abenecchi/abenecchi.github.io/raw/main/benecchiAndrewResume2201.pdf)
+[Fake news classifier](https://github.com/abenecchi/abenecchi.github.io/raw/main/benecchiCLCNN.pdf)
 
