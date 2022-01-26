@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="references.html"/>
-<link rel="next" href="histograms.html"/>
+
 <style type="text/css">
 p.abstract{
   text-align: center;
@@ -79,7 +79,7 @@ div.abstract{
 <ul class="summary">
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
 <ul>
-<li class="chapter" data-level="" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#exploratory-data-analysis"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
@@ -89,19 +89,17 @@ div.abstract{
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#preprocessing"><i class="fa fa-check"></i>Preprocessing</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#classification"><i class="fa fa-check"></i>Classification</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a></li>
-<li class="chapter" data-level="" data-path="conclusions-and-limitations.html"><a href="conclusions-and-limitations.html"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html#conclusions-and-limitations"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#required-packages"><i class="fa fa-check"></i>Required Packages</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#fake-news-code"><i class="fa fa-check"></i>Fake News Code</a></li>
-<li class="chapter" data-level="" data-path="histograms.html"><a href="histograms.html"><i class="fa fa-check"></i>Histograms</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i>Models</a>
-<ul>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-4"><i class="fa fa-check"></i>Model 4</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-6"><i class="fa fa-check"></i>Model 6</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#histograms"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#models"><i class="fa fa-check"></i>Models</a></li>
 </ul></li>
 </ul>
 
@@ -341,14 +339,74 @@ def makeClassifier(self,make_Fake, fully_connected_layers = None, conv_layers = 
     #plot_model(model, to_file=self.directory + &#39;model_plot.png&#39;, show_shapes=True, show_layer_names=True)
     </code></pre>
 </div>
+<div id="histograms" class="section level3 unnumbered">
+<h3>Histograms</h3>
+<pre><code>scrimblo = fakeNews(lowercase=True)
+edastart = scrimblo.make_fakeNews(eda=True)
+bseq = np.sqrt(np.arange(626))
+for q in range(len(edastart)):
+    if edastart[q][&#39;y&#39;].values[0]==1:
+        lbl = &#39;Fake&#39;
+        col = &#39;#007f7f7f&#39;
+    else:
+        lbl = &#39;real&#39;
+        col = &#39;#7f007f7f&#39;
+    plt.hist(np.ravel(edastart[q][&#39;title&#39;].apply(lambda x: len(x)).values),bins=15*bseq,color=col, label=lbl,log=True)
+plt.legend()
+plt.title(&#39;Histogram of Lengths of Real vs. Fake Title Length&#39;)
+plt.savefig(&#39;/mnt/c/Users/thecu/Documents/R Projects/4270/charLevelCNN/eda/&#39; + &#39;titles_hist.png&#39;)
+plt.clf()
+for q in range(len(edastart)):
+    if edastart[q][&#39;y&#39;].values[0]==1:
+        lbl = &#39;Fake&#39;
+        col = &#39;#007f7f7f&#39;
+    else:
+        lbl = &#39;real&#39;
+        col = &#39;#7f007f7f&#39;
+    plt.hist(np.ravel(edastart[q][&#39;text&#39;].apply(lambda x: len(x)).values),bins=2500*(25-bseq)[::-1],color=col, label=lbl,log=True)
+plt.legend()
+plt.title(&#39;Histogram of Lengths of Real vs. Fake Article Body Length&#39;)
+plt.savefig(
+&#39;/mnt/c/Users/thecu/Documents/R Projects/4270/charLevelCNN/eda/&#39; + &#39;bodies_hist.png&#39;)</code></pre>
+</div>
+<div id="models" class="section level3 unnumbered">
+<h3>Models</h3>
+<div id="model-4" class="section level4 unnumbered">
+<h4>Model 4</h4>
+<pre><code>    scrimblo_u = fakeNews(lowercase=False)
+zabloing_uf = scrimblo_u.make_fakeNews(content=False,raw=False)
+scrungus_ud = scrimblo_u.makeClassifier(zabloing_uf,fully_connected_layers=[256,256])
+kablooey_uf = scrimblo_u.three_way_split(zabloing_uf)
+myModel3 = scrimblo_u.get_fit(scrungus_ud,kablooey_uf, name=&#39;model_3&#39;,
+          batch_size = 64,
+          epochs = 40,
+          verbose = 2,
+          display = True,
+          predict = True)
+          </code></pre>
+</div>
+<div id="model-6" class="section level4 unnumbered">
+<h4>Model 6</h4>
+<pre><code>scrimblo_u = fakeNews(lowercase=False)
+zabloing_uf = scrimblo_u.make_fakeNews(content=False,raw=False,min_title_len=30,max_title_len=96,x_wid=123)
+scrungus_ud = scrimblo_u.makeClassifier(zabloing_uf,fully_connected_layers=[256,256])
+kablooey_uf = scrimblo_u.three_way_split(zabloing_uf)
+myModel5 = scrimblo_u.get_fit(scrungus_ud,kablooey_uf, name=&#39;model_5&#39;,
+          batch_size = 64,
+          epochs = 40,
+          verbose = 2,
+          display = True,
+          predict = True)</code></pre>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="references.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="histograms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

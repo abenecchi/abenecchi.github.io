@@ -31,7 +31,7 @@
   
   
 
-<link rel="next" href="exploratory-data-analysis.html"/>
+<link rel="next" href="literature-review.html"/>
 <style type="text/css">
 p.abstract{
   text-align: center;
@@ -79,7 +79,7 @@ div.abstract{
 <ul class="summary">
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
 <ul>
-<li class="chapter" data-level="" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#exploratory-data-analysis"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
@@ -89,19 +89,17 @@ div.abstract{
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#preprocessing"><i class="fa fa-check"></i>Preprocessing</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#classification"><i class="fa fa-check"></i>Classification</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a></li>
-<li class="chapter" data-level="" data-path="conclusions-and-limitations.html"><a href="conclusions-and-limitations.html"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html#conclusions-and-limitations"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#required-packages"><i class="fa fa-check"></i>Required Packages</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#fake-news-code"><i class="fa fa-check"></i>Fake News Code</a></li>
-<li class="chapter" data-level="" data-path="histograms.html"><a href="histograms.html"><i class="fa fa-check"></i>Histograms</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i>Models</a>
-<ul>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-4"><i class="fa fa-check"></i>Model 4</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-6"><i class="fa fa-check"></i>Model 6</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#histograms"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#models"><i class="fa fa-check"></i>Models</a></li>
 </ul></li>
 </ul>
 
@@ -138,6 +136,18 @@ div.abstract{
 Figure 1: Breakdown of topics.
 </p>
 </div>
+<div id="exploratory-data-analysis" class="section level3 unnumbered">
+<h3>Exploratory Data Analysis</h3>
+<p>The data come from the <a href="https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset">Kaggle Fake vs. Real News</a> dataset from <span class="citation">Ahmed, Traore, and Saad (2017)</span> and <span class="citation">"Ahmed et al. (2018)</span>, which contains fake and real headlines, article bodies, topics, and dates in two class-separated csv files, with 23481 fake articles, with <span class="math inline">\(y=1\)</span> for label, and 21417 real articles with <span class="math inline">\(y=0\)</span> for label. All of the real articles come from Reuters, while the fake articles come from a Kaggle collection assembled from articles flagged by Politifact and Wikipedia. Because the data from the fake news sites have a more diverse underlying source than the real news, it is possible that there are reader-salient elements within the genuine article bodies that may ‘tip off’ the classifier as to what class to which the article belongs; for example “CITY, Country (Reuters) -” is the header of most Reuters body paragraphs, and “21NEWSWIRE” is in several of the fake news paragraphs.</p>
+<div class="figure" style="text-align: center"><span id="fig:image-titlebodyhist"></span>
+<img src="eda/titles_hist.png" alt="Histograms of real and fake titles and article texts" width="648" /><img src="eda/bodies_hist.png" alt="Histograms of real and fake titles and article texts" width="648" />
+<p class="caption">
+Figure 2: Histograms of real and fake titles and article texts
+</p>
+</div>
+<p>The real titles have more variability in length, while the distribution of fake news article body texts has a strong rightward skew. Few real article titles are shorter than 30 characters or exceed 100 characters in length, so that indicates that there may be appr/opriate boundaries within that range, so tests should be carried out with reduced data.</p>
+<div style="page-break-after: always;"></div>
+</div>
 </div>
             </section>
 
@@ -145,7 +155,7 @@ Figure 1: Breakdown of topics.
         </div>
       </div>
 
-<a href="exploratory-data-analysis.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="literature-review.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

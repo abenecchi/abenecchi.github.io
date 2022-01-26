@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="methodology.html"/>
-<link rel="next" href="conclusions-and-limitations.html"/>
+<link rel="next" href="references.html"/>
 <style type="text/css">
 p.abstract{
   text-align: center;
@@ -79,7 +79,7 @@ div.abstract{
 <ul class="summary">
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
 <ul>
-<li class="chapter" data-level="" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#exploratory-data-analysis"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
@@ -89,19 +89,17 @@ div.abstract{
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#preprocessing"><i class="fa fa-check"></i>Preprocessing</a></li>
 <li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#classification"><i class="fa fa-check"></i>Classification</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a></li>
-<li class="chapter" data-level="" data-path="conclusions-and-limitations.html"><a href="conclusions-and-limitations.html"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html#conclusions-and-limitations"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#required-packages"><i class="fa fa-check"></i>Required Packages</a></li>
 <li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#fake-news-code"><i class="fa fa-check"></i>Fake News Code</a></li>
-<li class="chapter" data-level="" data-path="histograms.html"><a href="histograms.html"><i class="fa fa-check"></i>Histograms</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i>Models</a>
-<ul>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-4"><i class="fa fa-check"></i>Model 4</a></li>
-<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-6"><i class="fa fa-check"></i>Model 6</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#histograms"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#models"><i class="fa fa-check"></i>Models</a></li>
 </ul></li>
 </ul>
 
@@ -270,7 +268,11 @@ Figure 5: Confusion matrices for Model 4 (99.84%|93.86%|93.81%)
 Figure 6: Confusion matrices for Model 6 (100%|94.53%|93.09%)
 </p>
 </div>
+<div id="conclusions-and-limitations" class="section level3 unnumbered">
+<h3>Conclusions and Limitations</h3>
+<p>The models could distinguish the marked differences between the real and fake titles, with consideration of capitalization potentially conferring a benefit to predictive power while incurring a relatively-small cost in computational complexity, as the number of parameters added by widening the character table has a relatively-small impact on parameter count compared to further steps in the model construction process, lending credence to its scalability and flexibility. Model structure also deserves further investigation; it is possible that a narrowed, deepened, or shortened model structure may be best, as the effects of altering other aspects of layer attributes or model structure ought to be explored. In images, the stacking of layers with smaller kernel sizes is an efficient way to detect features while cutting down on the overall number of parameters tuned. Since the convolution operation only exists in one dimension in the case of text data, we do not necessarily reap the benefit of reduced parameters with this method, but it is possible that increased classification accuracy justifies the slight increase in computational expense of a deeper network with narrower filters. Finally, considering that the real and fake data were derived from specific sources, there remains a major concern that the model may be overfitting based on detecting certain ‘signatures’ within the text that, for example, may misclassify genuine news headlines regarding a conspiracist’s-favorite topic, or may not be written in the prosaic style of Reuters; with a larger and more diverse dataset, the model can become better attuned to the underlying features within headlines, and alterations to its configuration become more meaningful.</p>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
             </section>
 
@@ -278,7 +280,7 @@ Figure 6: Confusion matrices for Model 6 (100%|94.53%|93.09%)
         </div>
       </div>
 <a href="methodology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="conclusions-and-limitations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
