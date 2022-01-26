@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Fake News Code | Classification of fake news article titles using character-level convolutional neural networks</title>
+  <meta name="description" content="Fake News Code | Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Fake News Code | Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fake News Code | Classification of fake news article titles using character-level convolutional neural networks" />
+  
+  
+  
+
+<meta name="author" content="Andrew Benecchi" />
+
+
+<meta name="date" content="2021-12-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="required-packages.html"/>
+<link rel="next" href="histograms.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
+<ul>
+<li class="chapter" data-level="" data-path="computer-information.html"><a href="computer-information.html"><i class="fa fa-check"></i>Computer Information</a></li>
+<li class="chapter" data-level="" data-path="software.html"><a href="software.html"><i class="fa fa-check"></i>Software</a></li>
+<li class="chapter" data-level="" data-path="preprocessing.html"><a href="preprocessing.html"><i class="fa fa-check"></i>Preprocessing</a></li>
+<li class="chapter" data-level="" data-path="classification.html"><a href="classification.html"><i class="fa fa-check"></i>Classification</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="conclusions-and-limitations.html"><a href="conclusions-and-limitations.html"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
+<ul>
+<li class="chapter" data-level="" data-path="required-packages.html"><a href="required-packages.html"><i class="fa fa-check"></i>Required Packages</a></li>
+<li class="chapter" data-level="" data-path="fake-news-code.html"><a href="fake-news-code.html"><i class="fa fa-check"></i>Fake News Code</a></li>
+<li class="chapter" data-level="" data-path="histograms.html"><a href="histograms.html"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i>Models</a>
+<ul>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-4"><i class="fa fa-check"></i>Model 4</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-6"><i class="fa fa-check"></i>Model 6</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Classification of fake news article titles using character-level convolutional neural networks</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="fake-news-code" class="section level2 unnumbered">
+<h2>Fake News Code</h2>
+<pre><code>class fakeNews:
+    def __init__(self,directory=&#39;/mnt/c/Users/thecu/Documents/R Projects/4270/charLevelCNN/&#39;,lowercase=True):
+        self.lowercase = lowercase
+        self.directory = directory
+        if lowercase == True:
+            self.alphabet =
+            &quot;abcdefghijklmnopqrstuvwxyz0123456789,;.!?:&#39;\&quot;/\\|_@#$%^&amp;*~`+-=&lt;&gt;()[]{}&quot;
+        else:
+            self.alphabet =
+            &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,;.!?:&#39;\&quot;/\\|_@#$%^&amp;*~`+-=&lt;&gt;()[]{}&quot;
+    def make_fakeNews(self, balance=True, content = False, pad = 1.25):
+        self.pad = pad
+        self.balance = balance
+        self.content = content
+        self.pad = pad
+        articles = []
+        for dirname, _, filenames in os.walk(self.directory+&#39;data&#39;):
+            for filename in filenames:
+                mypath = os.path.join(dirname, filename)
+                name = re.sub(&#39;\.csv&#39;,&#39;&#39;,filename + &#39;_all&#39;)
+
+            exec(&quot;%s = pd.read_csv(&quot; % (name,)+
+            &quot;&#39;{path}&quot;.format(path=mypath)+&quot;&#39;)&quot;)
+            if name == &#39;Fake_all&#39;:
+                booler = 1
+            else:
+                booler = 0
+            exec(&quot;%s.insert(%s.shape[1],&#39;y&#39;,[%d]*%s.shape[0])&quot; % (name,name,booler,name))
+            exec(&quot;articles.append(%s)&quot; % (name,))
+    if self.balance == True:
+        clsLen = []
+        for df in articles:
+            clsLen.append(df.shape[0])
+        classSize = int(np.min(100*np.floor(np.array(clsLen)/100)))
+        articles_balanced = []
+        for df in articles:
+            articles_balanced.append(df.iloc[:classSize,:])
+        Articles_bal = pd.concat(articles_balanced,axis=0,ignore_index=True)
+        Articles_all = Articles_bal
+    else:
+        Articles_ubl = pd.concat(articles,axis=0,ignore_index=True)
+        Articles_all = Articles_ubl
+    tk = Tokenizer(num_words=None, char_level=True, oov_token=&#39;UNK&#39;)
+    train_titles = Articles_all.iloc[:,0]
+    train_bodies = Articles_all.iloc[:,1]
+    all_y = Articles_all[&#39;y&#39;].values
+    tk.fit_on_texts(train_titles)
+    char_dict = {}
+    for i, char in enumerate(self.alphabet):
+        char_dict[char] = i + 1
+
+    # Use char_dict to replace the tk.word_index
+    tk.word_index = char_dict.copy()
+    # Add &#39;UNK&#39; to the vocabulary
+    tk.word_index[tk.oov_token] = max(char_dict.values()) + 1
+    # Convert string to index
+    title_sequences = tk.texts_to_sequences(train_titles)
+    max_ttl = int(math.ceil(self.pad*max([len(x) for x in Articles_all.iloc[:,0].values])))
+    if self.content == True:
+        content_sequences = tk.texts_to_sequences(train_bodies)
+        max_cnt = int(math.ceil(self.pad*max([len(x) for x in Articles_all.iloc[:,1].values])))
+        coded_titles = pad_sequences(title_sequences, maxlen=max_ttl,
+        padding=&#39;post&#39;)
+        coded_bodies = pad_sequences(content_sequences, maxlen=max_cnt,
+        padding=&#39;post&#39;)
+        return (np.concatenate([coded_titles,coded_bodies],axis=1).astype(&#39;int32&#39;),
+        all_y,tk.word_index)
+    else:  
+        return (pad_sequences(title_sequences, maxlen=max_ttl, padding=&#39;post&#39;).astype(&#39;int32&#39;), all_y,tk.word_index)
+def three_way_split(self,make_Fake, split=&#39;default&#39;):
+    self.X = make_Fake[0]
+    self.y = make_Fake[1]
+    tot_len = self.y.shape[0]
+    self.split = split
+    if self.split == &#39;default&#39;:
+        tts = (7,2,1)
+    else:
+        tts = self.split
+    tsp = int((tts[2]*tot_len/20))
+    vsp = int(((tts[1]+tts[2])*tot_len/20))
+    hlf = int((1*tot_len/2))
+    test_tp =  (np.concatenate([self.X[:tsp,:],self.X[hlf:(hlf+tsp),:]],axis=0), 
+    np.concatenate([self.y[:tsp],self.y[hlf:(hlf+tsp)]],axis=0))
+    valid_tp = (np.concatenate([self.X[tsp:vsp,:],self.X[(hlf+tsp):(hlf+vsp),:]],axis=0),
+    np.concatenate([self.y[tsp:vsp], self.y[(hlf+tsp):(hlf+vsp)]],axis=0))
+    train_tp = (np.concatenate([self.X[vsp:hlf,:],self.X[(hlf+vsp):,:]],axis=0),
+    np.concatenate([self.y[vsp:hlf],self.y[(hlf+vsp):]],axis=0)) 
+    app = []
+    for tp in [train_tp, valid_tp,test_tp]:
+        alength = np.arange(tp[1].shape[0])
+        np.random.seed(5318008)
+        np.random.shuffle(alength)
+        wee = []
+        for q in tp:
+            if len(q.shape) == 2:
+                wee.append(q[alength,:])
+            elif len(q.shape) == 1:
+                wee.append(q[alength])
+        app.append(wee)     
+    return app
+def makeClassifier(self,make_Fake, fully_connected_layers = None, conv_layers = None, dropout = 0.5, optimizer = &#39;adam&#39;, loss=&#39;binary_crossentropy&#39;):
+    self.fully_connected_layers = fully_connected_layers
+    self.dropout_p = dropout
+    self.optimizer = optimizer
+    self.loss = loss
+    self.X = make_Fake[0]
+    self.y = make_Fake[1]
+    self.wind = make_Fake[2]
+    self.fully_connected_layers = fully_connected_layers
+    self.conv_layers = conv_layers
+    input_size = self.X.shape[1]
+    vocab_size = len(self.alphabet) + 1
+    embedding_size = len(self.alphabet) + 1
+    if self.fully_connected_layers == None:
+        fully_connected_layers=[1024, 1024]
+    if self.conv_layers == None:
+        conv_layers = [[256, 7, 3],
+               [256, 7, 3],
+               [256, 3, -1],
+               [256, 3, -1],
+               [256, 3, -1],
+               [256, 3, 3]]
+            # Embedding weights
+    embedding_weights = []  # (len(alphabet)+2, len(alphabet)+1)
+    embedding_weights.append(np.zeros(vocab_size))  # (0, len(alphabet)+2)
+
+    for char, i in self.wind.items():  # from index 1 to len(alphabet)+2
+        onehot = np.zeros(vocab_size)
+        onehot[i - 1] = 1
+        embedding_weights.append(onehot)
+
+    embedding_weights = np.array(embedding_weights)
+    print(&#39;Load&#39;)
+
+    # Embedding layer Initialization
+    embedding_layer = Embedding(vocab_size + 1,
+                                embedding_size,
+                                input_length=input_size,
+                                weights=[embedding_weights])
+
+    # Model Construction
+    # Input
+    inputs = Input(shape=(input_size,), name=&#39;input&#39;, dtype=&#39;int64&#39;)         # shape=(?, padded input size)
+    # Embedding
+    x = embedding_layer(inputs)
+    # Conv
+    for filter_num, filter_size, pooling_size in conv_layers:
+        x = Conv1D(filter_num, filter_size)(x)
+        x = Activation(&#39;relu&#39;)(x)
+        if pooling_size != -1:
+            x = MaxPooling1D(pool_size=pooling_size)(x)  # Final shape=(None, 34, 256)
+    x = Flatten()(x)  # (None, 8704)
+    # Fully connected layers
+    for dense_size in fully_connected_layers:
+        x = Dense(dense_size, activation=&#39;relu&#39;)(x)  # dense_size == 1024
+        x = Dropout(self.dropout_p)(x)
+    # Output Layer
+    predictions = Dense(1, activation=&#39;sigmoid&#39;)(x)
+    # Build model
+    model = Model(inputs=inputs, outputs=predictions)
+    model.compile(optimizer=optimizer, loss=loss,
+    metrics=[&#39;accuracy&#39;])  # Adam, categorical_crossentropy
+    model.summary()
+    return model
+    #plot_model(model, to_file=self.directory + &#39;model_plot.png&#39;, show_shapes=True, show_layer_names=True)
+    </code></pre>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="required-packages.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="histograms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+},
+"search": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
