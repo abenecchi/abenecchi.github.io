@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Literature Review | Classification of fake news article titles using character-level convolutional neural networks</title>
+  <meta name="description" content="Literature Review | Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Literature Review | Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Literature Review | Classification of fake news article titles using character-level convolutional neural networks" />
+  
+  
+  
+
+<meta name="author" content="Andrew Benecchi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="exploratory-data-analysis.html"/>
+<link rel="next" href="methodology.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="assets/kePrint-0.0.1/kePrint.js"></script>
+<link href="assets/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
+<ul>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#computer-information"><i class="fa fa-check"></i>Computer Information</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#software"><i class="fa fa-check"></i>Software</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#preprocessing"><i class="fa fa-check"></i>Preprocessing</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#classification"><i class="fa fa-check"></i>Classification</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="conclusions-and-limitations.html"><a href="conclusions-and-limitations.html"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#required-packages"><i class="fa fa-check"></i>Required Packages</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#fake-news-code"><i class="fa fa-check"></i>Fake News Code</a></li>
+<li class="chapter" data-level="" data-path="histograms.html"><a href="histograms.html"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i>Models</a>
+<ul>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-4"><i class="fa fa-check"></i>Model 4</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#model-6"><i class="fa fa-check"></i>Model 6</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Classification of fake news article titles using character-level convolutional neural networks</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="literature-review" class="section level1 unnumbered">
+<h1>Literature Review</h1>
+<p>The problem of detecting fake news has a strong corollary with other types of spam detection, such as online review spam detection. <span class="citation">Jindal and Liu (2008)</span> divided Amazon spam comments into three classes: bogus reviews—spam intended to praise/defame the product in order to raise/lower its status within the store; reviews on brands, where the text praises/defames the brand/company behind the product with no information regarding product-specific experience; finally, non-reviews, including advertisements, questions/answers, and random texts (i.e. the comment has no sentiment, real or fake). Classification was performed using logistic regression for each task. A first-pass screening of duplicate comments can be eliminating comments with a certain level of similarity; in the case of text data, one can use the Jaccard similarity, which takes the set of all words in comments <span class="math inline">\(d_{i},d_{j}\)</span> and calculates <span class="math inline">\(J_{i,j} =\frac{\mathrm{unique \enspace words}(d_{i}) \cap \mathrm{unique \enspace words}(d_{j})}{\mathrm{unique \enspace words}(d_{i}) \cup \mathrm{unique \enspace words}(d_{i})}\)</span>. In their analysis of these reviews, they found that 90% of reviewers on a subset of products had a maximum comment Jaccard similarity (vs. any reviewer) of 0.1, with the fewest having a Jaccard similarity of around 0.5, with the number slowly increasing up to a maximum score of 1, with 6% of reviewers having a maximum Jaccard score of 1. Users may either be spam accounts or genuine accounts accidentally sending duplicate reviews. In the context of fake news headlines, Jaccard similarity can be used as a distance metric in a k-nearest neighbors classifier, though this simple implementation may have bias towards classifying certain news topics or sources with certain styles (e.g. tabloids) as fake news. Brand reviews and non-reviews are the easier classification problems, as bogus reviews have a level of verisimilitude. The features used for classifying the former two types of spam include review-centric features, reviewer features, and product features, with textual features being particularly of interest. Frequency of positive and negative words in reviews, and frequency of brand name mentions, numbers, capital letters, and all-capital words were examined. Additionally, cosine similarity between reviews and product features was specifically helpful in detecting advertisements, with cosine similarity <span class="math inline">\(S_{\cos}(d_{i},d_{j})=\frac{d_{i} \dot d_{j}}{||d_{i}|| \enspace ||d_{j}||}\)</span>, with <span class="math inline">\(d_{i}\)</span> being an <span class="math inline">\(1 \times n, n=\mathrm{\# \enspace unique \enspace words \enspace in \enspace dataset}\)</span> feature vector with each entry being the count of a unique word; since large values of <span class="math inline">\(S_{\cos}\)</span> indicate high degrees of similarity in overlap of vocabulary, <span class="math inline">\(1-S_{\cos}(d_{i},d_{j})\)</span> can be also used as a distance metric for classification tasks. An <span class="math inline">\(L_{1}\)</span> version using Manhattan distance or <span class="math inline">\(L_{p}\)</span> using <span class="math inline">\(p\)</span>-dimensional Minkowski distance can be formulated by replacing the <span class="math inline">\(L_{2}\)</span> distance metric with the <span class="math inline">\(L_{p}\)</span>-norm. For classification of bogus reviews, the task involved looking at reviewer history to examine biases in reviews of similar products using outliers: positive reviews on poorly-reviewed products, negative reviews on well-reviewed products, and polarized reviews on products with average ratings. <span class="citation">Jindal and Liu (2008)</span> applied uplift modeling, a technique often found in marketing contexts, to assess likelihood of classification as spam based on four different types of reviewers: positive and negative reviewers (those <span class="math inline">\(\pm 1 \sigma\)</span>) in terms of sentiment, and positive and negative same-brand reviewers. Uplift per decile was implemented to compare the likelihood of positive spam classification to these four classes compared to random chance. A summary of uplift modeling and uplift per decile can be found in <span class="citation">Gutierrez and Gérardy (2017)</span>, though the methods in this paper does not have random assignment of treatments so causality is not relevant. Reviewers who repeatedly gave negative reviews for the same brand were most likely across all deciles to be classified as spam, whereas those with positive reviews generally were less likely than random to be classified as spam.</p>
+<p><span class="citation">Horne and Adali (2017)</span> proposed a method of classification using features based on complexity, style, and intended psychological effect by using various NLP toolkits for Python, and applied an ANOVA to explore their datasets. Real news article titles are more likely on average to contain fewer proper nouns than fake or satire news article titles, while real news article bodies were more likely to contain positive words and less likely to contain negative words than fake news articles. Their Linear SVM was applied to a dataset of 75 real articles, 75 fake news articles, and 75 satire articles, with performance assessed on the mean of 5-fold cross-validation of one-versus-one classification tasks. The SVM performed best on distinguishing satire article bodies from real article bodies, and performed worst on distinguishing satire article titles from fake news article titles.</p>
+<p>One common method of dimensionality reduction of text datasets is the term-frequency inverse-document-frequency (<span class="math inline">\(tfidf(D,d,t)=tf(t,d) \times idf(t,D)\)</span>) where <span class="math inline">\(D\)</span> is the set of all data, <span class="math inline">\(d \in D\)</span>, and <span class="math inline">\(t\)</span> are the set of terms within all documents <span class="math inline">\(D\)</span>. The term frequency within a document can be described by the raw count divided by the total number of terms in the document <span class="math inline">\(tf(t,d)=\frac{f_{t,d}}{\sum_{t&#39; \in d} f_{t&#39;,d}}\)</span>, or through alternative measures of <span class="math inline">\(tf(t,d)\)</span> such as the raw count, binary, or through a normalization method such as log normalization <span class="math inline">\(tf(t,d)=\log(1+f_{t,d})\)</span> or through double normalization with strength <span class="math inline">\(K\)</span>, <span class="math inline">\(tf(t,d)=K+(1-K)\frac{f_{t,d}}{\max_{\{t&#39; \in d\}} f_{t&#39;,d}}\)</span>. Inverse document frequency <span class="math inline">\(idf(t,D)\)</span> is a measure that increases with the rarity of a term, and is classically measured by <span class="math inline">\(idf(t,D)=\log \frac{|D|}{|d \in D: t \in d|}\)</span> where <span class="math inline">\(|D|\)</span> is the number of documents and <span class="math inline">\(|d \in D: t \in d|\)</span> is the number of documents where <span class="math inline">\(t\)</span> can be found. Alternatives includes the smooth IDF <span class="math inline">\(1 + \log \frac{|D|}{1+|d \in D: t \in d|}\)</span> which reduces the deweighting of common document-wide terms (e.g. ‘for,’ ‘the,’ ‘and’) and the probabilistic IDF <span class="math inline">\(\log \frac{|D|-|d \in D: t \in d|}{|d \in D: t \in d|}\)</span> which further deweights the most common document-wide terms. TFIDF is implemented in feature extraction tasks for <span class="citation">"Ahmed et al. (2018)</span> and <span class="citation">Ahmed, Traore, and Saad (2017)</span>.</p>
+<p><span class="citation">Ahmed, Traore, and Saad (2017)</span> preprocessed the data by removing unnecessary characters, tokenizing the resulting words, removing stop words—common words such as pronouns, prepositions, and infinitives, and stemming—reducing conjugated forms e.g. <code>'{run, runner, running, drink, drinker, drinking}</code> <span class="math inline">\(\rightarrow\)</span> <code>'{run, run, run, drink, drink, drink}</code>. From these, <span class="math inline">\(n\)</span>-grams (word sequences of length <span class="math inline">\(n\)</span>) were extracted, and the top <span class="math inline">\(k\)</span> <span class="math inline">\(n\)</span>-grams were selected for each sample. For the top 50,000 cleaned <span class="math inline">\(n=1\)</span>-grams (i.e. single words), the accuracy of the linear SVM was 92.0%.</p>
+<div class="figure" style="text-align: center"><span id="fig:image-charlvl"></span>
+<img src="sources/charLevelExpl.png" alt="Character-level convolution" width="378" />
+<p class="caption">
+Figure 3: Character-level convolution
+</p>
+</div>
+<p><span class="citation">Zhang, Zhao, and LeCun (2016)</span> proposed a character-level method of classification of text using 1-dimensional convolutional neural networks, allowing for flexibility with and generalization to problems with different character sets (e.g. Greek alphabet, Hangul, Emoji). The proposed method works by assigning each character (including padding and unknown characters as specific entities) as unique integer IDs which are converted to one-hot vectors within the character embedding space. Each sample is now represented by a 2D array which can be thought of as a time series of one-hot vectors. From this point, the embdedded data is convolved using several filters and max-pooled several times before flattening to a series of fully-connected layers with dropout before the final output layer, which has 1 node in binary classification and regression problems and <span class="math inline">\(k\)</span> nodes in a <span class="math inline">\(k\)</span>-way classification problem.</p>
+<p>The example model structure is offered in small or large configurations in the example. Within the convolutional stage, it uses 6 rounds of ReLu-activated 1-D convolution with feature sizes of either 256 (small) or 1024 (large); the first two 1-D convolutional layers have a filter size of 7 and are both followed by a max-pooling layer with a pooling number of 3. After this second max-pooling layer, the data passes through the 3 ReLu-activated 1-D convolutional layers with filter size of 3 before the final 1-D convolutional layer, which also has a filter size of 3 and is followed by another max-pooling layer with a pooling number of 3. This feature array is flattened as it gets passed to the two dropout-regulated fully-connected layers, which are either of size 1024 (small) or 2048 (large); the dropout probability for their experiments was set to <span class="math inline">\(p_{\mathrm{dropout}}=0.5\)</span>. In order to control for generalization error through data augmentation, on some experiments using the character-level CNN the authors implemented a weighted thesaurus method, where new samples are copied from existing samples, and the sentences are scanned for replaceable words (i.e. words with a synonym); the probability that <span class="math inline">\(n\)</span> words are replaced in a given sample follows a geometric distribution where <span class="math inline">\(P(n=x) = (1-p)p^{x}, x\in \mathbb{Z} \geq 0, p \in (0,1)\)</span>; when it is decided that a word is replaced, it is replaced with a synonym with index <span class="math inline">\(s\)</span> in the similarity-sorted list which also follows a geometric distribution, with the probability of choosing index <span class="math inline">\(s\)</span> is <span class="math inline">\(P(s=y) = (1-q)q^{y}, y \in \mathbb{Z} \geq 0, q \in (0,1)\)</span>. This method is unfortunately agnostic to whether or not the replaced word(s) are load-bearing (i.e. their replacement by synonym(s) completely changes the meaning of a sentence). The authors set <span class="math inline">\(p=q=0.5\)</span> for their analysis, though this provides an hyperparameter that can be further inspected. With the dataset from <span class="citation">Ahmed, Traore, and Saad (2017)</span> the concern of augmentation using the thesaurus method is that its random assignment of replacement words may directly affect the classification task because unusual patterns of speech are often found in spam, whereas this augmentation may be better fit for tasks such as sentiment analysis or topic/ontological classification. The character-level CNN was compared to to classical NLP methods such as bag-of-words and its TFIDF, bag-of-<span class="math inline">\(n\)</span>-grams and its TFIDF, and bag-of-means on word embedding, as well as deep learning methods such as a long-short term memory (LSTM) network and word-based convolutional networks using word2vec or a lookup table.</p>
+<div class="figure" style="text-align: center"><span id="fig:image-trlvltasks"></span>
+<img src="sources/charLevelCompData.png" alt="Comparison of classification tasks in Zhang, Zhao, and LeCun (2016). Epoch size is measured by dividing training size by batch size." width="402" />
+<p class="caption">
+Figure 4: Comparison of classification tasks in Zhang, Zhao, and LeCun (2016). Epoch size is measured by dividing training size by batch size.
+</p>
+</div>
+<p>The authors’ models performed the best in tasks with large sample sizes (i.e. the latter four entries in []), with <span class="math inline">\(n\)</span>-gram methods performing best for the tasks smaller datasets, indicating its quality for implementation in large datasets and potential commercial applications. From their results, the authors learned that the semantics of the task do not affect the classification capability of character-level CNN and that considering uppercase characters to be separate from their lowercase counterparts was not helpful for larger datasets; in environments and learning tasks where capitalization conveys less meaning, distinguishing between the two is likely to be not as important. In the case of fake news detection, it is possible that fake news headlines or body texts use nonstandard capitalization (e.g. Phrases In Title Case, PHRASES IN ALL CAPS) and thus whether uppercase letters should be retained in the embedding ought to be tested as part of this paper’s methodology.</p>
+<div style="page-break-after: always;"></div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="exploratory-data-analysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methodology.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+},
+"search": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
