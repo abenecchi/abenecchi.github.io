@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Classification of fake news article titles using character-level convolutional neural networks</title>
+  <meta name="description" content="Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Classification of fake news article titles using character-level convolutional neural networks" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Classification of fake news article titles using character-level convolutional neural networks" />
+  
+  
+  
+
+<meta name="author" content="Andrew Benecchi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="literature-review.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="assets/kePrint-0.0.1/kePrint.js"></script>
+<link href="assets/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#exploratory-data-analysis"><i class="fa fa-check"></i>Exploratory Data Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i>Literature Review</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i>Methodology</a>
+<ul>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#computer-information"><i class="fa fa-check"></i>Computer Information</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#software"><i class="fa fa-check"></i>Software</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#preprocessing"><i class="fa fa-check"></i>Preprocessing</a></li>
+<li class="chapter" data-level="" data-path="methodology.html"><a href="methodology.html#classification"><i class="fa fa-check"></i>Classification</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i>Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="results.html"><a href="results.html#conclusions-and-limitations"><i class="fa fa-check"></i>Conclusions and Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html"><i class="fa fa-check"></i>Appendix A: Code</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#required-packages"><i class="fa fa-check"></i>Required Packages</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#fake-news-code"><i class="fa fa-check"></i>Fake News Code</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#histograms"><i class="fa fa-check"></i>Histograms</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-code.html"><a href="appendix-a-code.html#models"><i class="fa fa-check"></i>Models</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Classification of fake news article titles using character-level convolutional neural networks</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Classification of fake news article titles using character-level convolutional neural networks</h1>
+<p class="author"><em>Andrew Benecchi</em></p>
+<div class="abstract">
+<p class="abstract">Abstract</p>
+<p>Automated detection of spurious news and spam often rely on abstracting lexical, morphological, syntactical, or affective content from text. These models have merit in corresponding with human-observer features, but information is lost, and the features may not follow normal distributions, especially in short excerpts of text such as titles. Existing often rely on inclusion of the body text, which may or may not exist in real-world applications; since these article titles are accessible in metadata across platforms, classification of headlines has a much broader use case. We propose a method of applying character-level convolutional neural networks, a character-agnostic feature recognition system that combines the sentence-as-time-series philosophy of word2vec with a less constrained view of what information may be useful to classification, while vastly minimizing preprocessing time.</p>
+</div>
+</div>
+<div id="introduction" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p>Fake news has become pervasive within the public consciousness since the mass inter-generational adoption of multi-platform social networks such as Facebook, Twitter, and YouTube. The decentralized nature of social networks engenders the formation of echo chambers in online spaces, and growing distrust in government and mass media have not led to healthier skepticism towards all media but instead a growing trend for people to reject information that runs counter to their narrative as “fake news” while uncritically lending credibility to spurious information. Fake news may not be 100% false, but the term applies to information reported wherein a seed of truth is abstracted heavily or combined with “alternative facts” to bend and obscure the truth to fit a narrative. This rise in the transmissibility of fake news has led to the proliferation in disinformation—misinformation deliberately spread to have financial, social or political influence. In comparison to disinformation and misinformation spread through legacy media, which was largely spread by local and national state actors within or across borders, disinformation spread through social networks may have a variety of authors, from domestic and foreign governments, extremist groups, and politicians, to business figures and local or international profiteers—those who earn money from disinformation through advertising revenue, related product sales, or capital gains from favorable movements in the prices of financial instruments. In order to limit the spread of fake news, social media sites have introduced various methods of detection, from screening out websites known for misinformation, to text detection within articles and/or metadata, to advanced methods such as text detection using optical character recognition within images. These attempts are not without their flaws, however, as over-sensitivity to specific keywords, patterns, and phrases may exist.</p>
+<p>Previous published methods of text classification of fake news articles, titles, and opinion-related spam in general include analysis of lexical, psychological, grammatical, syntactical, and morphological features, or analysis of the relative frequency or salience of words or their stemmed forms. We propose a method of spam classification that relies not on abstracted features or content but instead a language-agnostic method that takes the individual characters as input. Though applying character-based text classification is a relatively-trivial extension of the application of convolutional neural networks to categorically-structured data, it is only now become more accessible due to recent advancements in both software development and hardware being able to handle the time and memory complexity.</p>
+<div class="figure" style="text-align: center"><span id="fig:image-charlvlcomp"></span>
+<img src="sources/topic_breakdown.png" alt="Breakdown of topics." width="430" />
+<p class="caption">
+Figure 1: Breakdown of topics.
+</p>
+</div>
+<div id="exploratory-data-analysis" class="section level3 unnumbered">
+<h3>Exploratory Data Analysis</h3>
+<p>The data come from the <a href="https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset">Kaggle Fake vs. Real News</a> dataset from <span class="citation">Ahmed, Traore, and Saad (2017)</span> and <span class="citation">"Ahmed et al. (2018)</span>, which contains fake and real headlines, article bodies, topics, and dates in two class-separated csv files, with 23481 fake articles, with <span class="math inline">\(y=1\)</span> for label, and 21417 real articles with <span class="math inline">\(y=0\)</span> for label. All of the real articles come from Reuters, while the fake articles come from a Kaggle collection assembled from articles flagged by Politifact and Wikipedia. Because the data from the fake news sites have a more diverse underlying source than the real news, it is possible that there are reader-salient elements within the genuine article bodies that may ‘tip off’ the classifier as to what class to which the article belongs; for example “CITY, Country (Reuters) -” is the header of most Reuters body paragraphs, and “21NEWSWIRE” is in several of the fake news paragraphs.</p>
+<div class="figure" style="text-align: center"><span id="fig:image-titlebodyhist"></span>
+<img src="eda/titles_hist.png" alt="Histograms of real and fake titles and article texts" width="648" /><img src="eda/bodies_hist.png" alt="Histograms of real and fake titles and article texts" width="648" />
+<p class="caption">
+Figure 2: Histograms of real and fake titles and article texts
+</p>
+</div>
+<p>The real titles have more variability in length, while the distribution of fake news article body texts has a strong rightward skew. Few real article titles are shorter than 30 characters or exceed 100 characters in length, so that indicates that there may be appr/opriate boundaries within that range, so tests should be carried out with reduced data.</p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="literature-review.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+},
+"search": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
