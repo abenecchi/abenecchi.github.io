@@ -30,10 +30,12 @@ Education
   * FINA 4320: Derivative Security Markets (Spring 2022, in progress)
   * ECSE 6420: Modern Statistical Programming (Master's level for Honors credit, Spring 2022, in progress)
   * MATH 6790: Mathematical Pricing of Options (Master's level for Honors credit, Spring 2022, in progress)
-* Projects:
-  <ul>{% for post in site.portfolio %}
+
+Projects
+======
+<ul>{% for post in site.portfolio %}
   {% include archive-single.html %}
-  {% endfor %}</ul>
+{% endfor %}</ul>
   *  [STAT 4270: Classification of fake news headlines using character-level convolutional neural networks](https://benecchi.dev/clcnn)
   *  [STAT 4280: Time series analysis of flow of Feather River, 10/1902-09/1961](https://benecchi.dev/4280Proj)
 
@@ -82,23 +84,11 @@ Skills and Certifications
   * Financial Analysis
   * Forecasting
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+[//]: # (#Publications #====== #<ul>{% for post in site.publications %} #{% include archive-single-cv.html %} #{% endfor %}</ul>)
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+[//]: # (#Talks #====== #<ul>{% for post in site.talks %} #{% include archive-single-talk-cv.html %} #{% endfor %}</ul>)
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+[//]: # (#Teaching #====== #<ul>{% for post in site.teaching %} #{% include archive-single-cv.html %} #{% endfor %}</ul>)
   
 Community Leadership Experience
 ======
