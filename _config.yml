@@ -84,11 +84,11 @@ author:
   avatar           : "profile.png"
   bio              : "4th-year Statistics and Finance major. Expect to see TensorFlow and Shiny projects soon."
   location         : "University of Georgia"
-  employer         : "https://github.com/abenecchi/abenecchi.github.io/raw/main/benecchiAndrewResume2201.pdf"
+  employer         : #
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "andrew.r.benecchi+website@googlemail.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
