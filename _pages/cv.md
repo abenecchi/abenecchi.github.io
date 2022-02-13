@@ -36,8 +36,9 @@ Projects
 <ul>{% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}</ul>
-  *  [STAT 4270: Classification of fake news headlines using character-level convolutional neural networks](https://benecchi.dev/clcnn)
-  *  [STAT 4280: Time series analysis of flow of Feather River, 10/1902-09/1961](https://benecchi.dev/4280Proj)
+
+[//]: # (  *  [STAT 4270: Classification of fake news headlines using character-level convolutional neural networks](https://benecchi.dev/clcnn) )
+[//]: # (  *  [STAT 4280: Time series analysis of flow of Feather River, 10/1902-09/1961](https://benecchi.dev/4280Proj) )
 
 
 Work Experience
