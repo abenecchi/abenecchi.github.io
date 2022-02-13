@@ -4,6 +4,4 @@ layout: forward
 excerpt: # "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 target: https://benecchi.dev/clcnn
-message: This isn't here any more!
-time: 0.01
 ---
