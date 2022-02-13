@@ -5,4 +5,5 @@ excerpt: # "Short description of portfolio item number 1<br/><img src='/images/5
 collection: portfolio
 target: https://benecchi.dev/clcnn
 message: This isn't here any more!
+time: 0.01
 ---
