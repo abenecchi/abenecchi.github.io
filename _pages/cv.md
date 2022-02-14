@@ -65,7 +65,7 @@ Work Experience
 Skills and Certifications
 ======
 * R (3+ years)
-* Python (2 years)
+* Python (2+ years)
   * TensorFlow (1+ year)
   * scikit-learn (1+ year)
   * RAPIDS suite
@@ -79,6 +79,8 @@ Skills and Certifications
 * Skill Categories
   * Machine Learning
   * Deep Learning
+  * Natural Language Processing (NLP)
+  * Computer Vision
   * Time Series Analysis
   * Image Analysis
   * Data Visualization
