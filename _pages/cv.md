@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/AndrewBenecchiResume.pdf)
+
 Education
 ======
 * B.S. in Finance, GitHub University, May 2023 (expected)
