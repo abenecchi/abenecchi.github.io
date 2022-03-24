@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/AndrewBenecchiResume.pdf)
+[Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/Andrew_Benecchi_Resume.pdf)
 
 Education
 ======
