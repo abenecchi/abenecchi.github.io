@@ -10,7 +10,7 @@ redirect_from:
 
 I’m a fourth-year undergraduate student at the University of Georgia studying Statistics and Finance, with an interest in pursuing a statistics-related degree for graduate school. For as long as I can remember, I’ve loved mathematics and have always found interest in forecasting and building models, whether it applies to identifying healthy cells, tracking storms, or predicting the trajectory of the market.  I've professionally applied my learnings and grown through several internships, including as an analyst at a private equity firm and a business development intern at a payment solutions company.
 
-See my resume here. [Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/AndrewBenecchiResume.pdf)
+See my resume here. [Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/Andrew_Benecchi_Resume.pdf)
 
 See a recent project here. [[PDF]](https://github.com/abenecchi/abenecchi.github.io/raw/main/benecchiCLCNN.pdf) [[Web]](https://benecchi.dev/clcnn)
 
