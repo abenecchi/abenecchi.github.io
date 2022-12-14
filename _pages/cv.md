@@ -13,25 +13,29 @@ redirect_from:
 
 Education
 ======
-* B.S. in Finance, GitHub University, May 2023 (expected)
-* B.B.A. in Finance, GitHub University, May 2023 (expected)
+* B.S. in Statistics, University of Georgia, May 2023 (expected)
+* B.B.A. in Finance, University of Georgia, May 2023 (expected)
 * Honors and Scholarships:
-  * Honors Program (3.7 GPA)
-  * 2020 Michael E. Merriman Memorial Scholarship
+  * Honors Program (3.56 GPA)
   * 2020 Michael E. Merriman Memorial Scholarship
   * Abraham Baldwin Scholarship
   * Zell Miller Scholarship
   * UGA National Merit Scholar
+  * National Society of Collegiate Scholars
 * Coursework:
-  * STAT 4280: Applied Time Series Analysis (Fall 2020, A)
-  * STAT 4365: Modern Statistical Programming (Fall 2020, A)
-  * STAT 4270: Network Data and Graphical Analysis (Fall 2021, A)
-  * FINA 4310: Survey of Investments (Fall 2021, A-)
-  * ECSE 6410: Modern Statistical Programming (Master's level for Honors credit, Fall 2021, A-)
-  * FINA 4200: Corporate Finance Theory (Spring 2022, in progress)
-  * FINA 4320: Derivative Security Markets (Spring 2022, in progress)
-  * ECSE 6420: Modern Statistical Programming (Master's level for Honors credit, Spring 2022, in progress)
-  * MATH 6790: Mathematical Pricing of Options (Master's level for Honors credit, Spring 2022, in progress)
+  * STAT 4280: Applied Time Series Analysis (Fall 2020)
+  * STAT 4365: Modern Statistical Programming (Fall 2020)
+  * STAT 4270: Network Data and Graphical Analysis (Fall 2021)
+  * FINA 4310: Survey of Investments (Fall 2021)
+  * ECSE 6410: Pattern Recognition (Master's level for Honors credit, Fall 2021)
+  * FINA 4200: Corporate Finance Theory (Spring 2022)
+  * FINA 4320: Derivative Security Markets (Spring 2022)
+  * ECSE 6420: Deep Learning (Master's level for Honors credit, Spring 2022)
+  * MATH 6790: Mathematical Pricing of Options (Master's level for Honors credit, Spring 2022)
+  * FINA 4210: Applied Corporate Finance (Summer 2022)
+  * STAT 4350: Applied Bayesian Statistics (Fall 2022)
+  * FINA 4340: Fixed Income Securities Analysis (Fall 2022)
+  * STAT 5010W/5020W: Statistical Capstone I/II (Fall 2022/Spring 2023)
 
 Projects
 ======
@@ -64,8 +68,8 @@ Work Experience
   
 Skills and Certifications
 ======
-* R (3+ years)
-* Python (2+ years)
+* R (4+ years)
+* Python (3+ years)
   * TensorFlow (1+ year)
   * scikit-learn (1+ year)
   * RAPIDS suite
@@ -87,24 +91,15 @@ Skills and Certifications
   * Data Engineering
   * Data Cleaning
   * Financial Analysis
+  * Financial Modeling
   * Forecasting
 
 Community Leadership Experience
 ======
-* UGA Statistics Club
-  * Athens, GA
-  * Secretary
-   * January 2021-Present
-   * Organized a guest lecture on COVID-19 modeling by Dr. John Drake of UGA’s Center for the Epidemiology of Infectious Diseases
-* UGA Interfraternity Council (IFC)
-  * Athens, GA
-  * Philanthropy Committee
-   * November 2020-Present
-   * Organized event between IFC and The Backpack Project Athens (TBP-ATH) to provide backpacks full of supplies to 50% of Athens’ homeless population
 * Phi Kappa Psi Georgia Alpha Chapter
   * Athens, GA
   * Philanthropy Chairman
-   * November 2020-December 2021
+   * November 2020-Present
    * Organized joint service event with Delta Phi Epsilon sorority, assembling and delivering over $2000 worth of backpacks and winter supplies
    * Launched Phi Kappa Psi Week of Service with TBP-ATH, providing coffee, clothing, meals, and essential medical supplies to homeless residents of Athens
    * Led chapter members in planning and logistics for events and leadership retreat sessions
@@ -123,10 +118,10 @@ Community Leadership Experience
 * The Backpack Project Athens (TBP-ATH)
   * Athens, GA
   * Greek Life Outreach Coordinator
-   * February 2021-Present
+   * February 2021-May 2022
    * Promoted TBP-ATH within Greek life, resulting in new philanthropic relationships with IFC, multiple fraternities, and sororities
   * Street Outreach Team
-   * February 2021-Present
+   * January-December 2021
    * Lead driver for weekly Saturday Meals delivery routes; provided critical logistical support for events
   * Community Engagement Committee
    * August 2019-Present
