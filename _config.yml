@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Andrew Ratcliffe Benecchi"
 title_separator          : "-"
 name                     : &name "Andrew Ratcliffe Benecchi"
-description              : &description "this is the website where he chronicles his days as an amateur statistician."
+description              : &description "This is the website where he chronicles his projects."
 url                      : https://benecchi.dev # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "abenecchi.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Andrew Ratcliffe Benecchi"
   avatar           : "headshot.png"
-  bio              : "4th-year Statistics and Finance major. Expect to see TensorFlow and Shiny projects soon."
+  bio              : "5th-year Statistics and Finance major. Expect to see more projects and links soon!"
   location         : "University of Georgia"
   employer         : #
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
