@@ -13,15 +13,20 @@ redirect_from:
 
 Education
 ======
-* B.S. in Statistics, University of Georgia, May 2023 (expected)
-* B.B.A. in Finance, University of Georgia, May 2023 (expected)
+* M.S. in Engineering, Electrical and Computer Emphasis, University of Georgia, May 2026 (expected)
+  * Geographic Information Sciences Certificate Candidate
+  * Honors and Scholarships:
+    * MILAB Research Assistantship
+    * 2023 Mukh Technologies Scholarship
+* B.S. in Statistics, University of Georgia, May 2023
+* B.B.A. in Finance, University of Georgia, May 2023
 * Honors and Scholarships:
-  * Honors Program (3.56 GPA)
+  * Outstanding Undergraduate Researcher Award
+  * Honors Program Graduate
   * 2020 Michael E. Merriman Memorial Scholarship
   * Abraham Baldwin Scholarship
   * Zell Miller Scholarship
   * UGA National Merit Scholar
-  * National Society of Collegiate Scholars
 * Coursework:
   * STAT 4280: Applied Time Series Analysis (Fall 2020)
   * STAT 4365: Modern Statistical Programming (Fall 2020)
@@ -36,6 +41,9 @@ Education
   * STAT 4350: Applied Bayesian Statistics (Fall 2022)
   * FINA 4340: Fixed Income Securities Analysis (Fall 2022)
   * STAT 5010W/5020W: Statistical Capstone I/II (Fall 2022/Spring 2023)
+  * ENGR 8990: Special Topics in Engineering (Machine Learning for Computer Vision, Guoyu Lu, Fall 2023)
+  * GEOG 6370: Intro to GIS (Fall 2023)
+  * 
 
 Projects
 ======
@@ -98,8 +106,17 @@ Community Leadership Experience
 ======
 * Phi Kappa Psi Georgia Alpha Chapter
   * Athens, GA
+  * Graduate Advisor
+    * August 2023-Present
+    * Coordinated actions between chapter, house corporation, and alumni association
+  * Tutor-in-Residence
+    * August 2020-Present
+    * Provided pro bono peer tutoring services to fraternity members and associates for undergraduate and graduate courses, including mathematics up to Calculus III, statistics classes from Intro. to Statistics up to Applied Regression Analysis and Advanced Statistical Programming, financial classes such as Mathematical Pricing of Options, and economics courses such as Econometrics and Time Series Analysis
+  * Brotherhood Chair
+    * January-May 2023
+    * Led organization of brotherhood-centered events and out-of-town trips; managed logistics for and acquisition of internal event-related inventories
   * Philanthropy Chairman
-   * November 2020-Present
+   * November 2020-December 2022
    * Organized joint service event with Delta Phi Epsilon sorority, assembling and delivering over $2000 worth of backpacks and winter supplies
    * Launched Phi Kappa Psi Week of Service with TBP-ATH, providing coffee, clothing, meals, and essential medical supplies to homeless residents of Athens
    * Led chapter members in planning and logistics for events and leadership retreat sessions
