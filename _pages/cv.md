@@ -18,32 +18,33 @@ Education
   * Honors and Scholarships:
     * MILAB Research Assistantship
     * 2023 Mukh Technologies Scholarship
+  * Coursework:
+    * ENGR 8990: Special Topics in Engineering (Machine Learning for Computer Vision, Guoyu Lu, Fall 2023)
+    * GEOG 6370: Intro to GIS (Fall 2023)
 * B.S. in Statistics, University of Georgia, May 2023
 * B.B.A. in Finance, University of Georgia, May 2023
-* Honors and Scholarships:
-  * Outstanding Undergraduate Researcher Award
-  * Honors Program Graduate
-  * 2020 Michael E. Merriman Memorial Scholarship
-  * Abraham Baldwin Scholarship
-  * Zell Miller Scholarship
-  * UGA National Merit Scholar
-* Coursework:
-  * STAT 4280: Applied Time Series Analysis (Fall 2020)
-  * STAT 4365: Modern Statistical Programming (Fall 2020)
-  * STAT 4270: Network Data and Graphical Analysis (Fall 2021)
-  * FINA 4310: Survey of Investments (Fall 2021)
-  * ECSE 6410: Pattern Recognition (Master's level for Honors credit, Fall 2021)
-  * FINA 4200: Corporate Finance Theory (Spring 2022)
-  * FINA 4320: Derivative Security Markets (Spring 2022)
-  * ECSE 6420: Deep Learning (Master's level for Honors credit, Spring 2022)
-  * MATH 6790: Mathematical Pricing of Options (Master's level for Honors credit, Spring 2022)
-  * FINA 4210: Applied Corporate Finance (Summer 2022)
-  * STAT 4350: Applied Bayesian Statistics (Fall 2022)
-  * FINA 4340: Fixed Income Securities Analysis (Fall 2022)
-  * STAT 5010W/5020W: Statistical Capstone I/II (Fall 2022/Spring 2023)
-  * ENGR 8990: Special Topics in Engineering (Machine Learning for Computer Vision, Guoyu Lu, Fall 2023)
-  * GEOG 6370: Intro to GIS (Fall 2023)
-  * 
+  * Honors and Scholarships:
+    * Outstanding Undergraduate Researcher Award
+    * Honors Program Graduate
+    * 2020 Michael E. Merriman Memorial Scholarship
+    * Abraham Baldwin Scholarship
+    * Zell Miller Scholarship
+    * UGA National Merit Scholar
+  * Coursework:
+    * STAT 4280: Applied Time Series Analysis (Fall 2020)
+    * STAT 4365: Modern Statistical Programming (Fall 2020)
+    * STAT 4270: Network Data and Graphical Analysis (Fall 2021)
+    * FINA 4310: Survey of Investments (Fall 2021)
+    * ECSE 6410: Pattern Recognition (Master's level for Honors credit, Fall 2021)
+    * FINA 4200: Corporate Finance Theory (Spring 2022)
+    * FINA 4320: Derivative Security Markets (Spring 2022)
+    * ECSE 6420: Deep Learning (Master's level for Honors credit, Spring 2022)
+    * MATH 6790: Mathematical Pricing of Options (Master's level for Honors credit, Spring 2022)
+    * FINA 4210: Applied Corporate Finance (Summer 2022)
+    * STAT 4350: Applied Bayesian Statistics (Fall 2022)
+    * FINA 4340: Fixed Income Securities Analysis (Fall 2022)
+    * STAT 5010W/5020W: Statistical Capstone I/II (Fall 2022/Spring 2023)
+     
 
 Projects
 ======
@@ -81,6 +82,7 @@ Skills and Certifications
   * TensorFlow (1+ year)
   * scikit-learn (1+ year)
   * RAPIDS suite
+* ArcGIS Pro
 * Ubuntu / Debian
 * Tableau
 * MATLAB
@@ -91,10 +93,10 @@ Skills and Certifications
 * Skill Categories
   * Machine Learning
   * Deep Learning
-  * Natural Language Processing (NLP)
   * Computer Vision
   * Time Series Analysis
   * Image Analysis
+  * Natural Language Processing (NLP)
   * Data Visualization
   * Data Engineering
   * Data Cleaning
