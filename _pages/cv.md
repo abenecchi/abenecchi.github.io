@@ -9,18 +9,25 @@ redirect_from:
 
 {% include base_path %}
 
-[Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/Andrew_Benecchi_Resume.pdf)
+<!--[Resume](https://github.com/abenecchi/abenecchi.github.io/raw/main/Andrew_Benecchi_Resume.pdf)-->
 
 Education
 ======
 * M.S. in Engineering, Electrical and Computer Emphasis, University of Georgia, May 2026 (expected)
   * Geographic Information Sciences Certificate Candidate
   * Honors and Scholarships:
-    * MILAB Research Assistantship
-    * 2023 Mukh Technologies Scholarship
-  * Coursework:
+    * Graduate Research Assistantship, Mutlispectral Imagery Lab (Summer 2024-Present)
+    * 2024 Spring Semester Scholarship (sponsor information suppressed)
+    * 2023 Fall Semester Scholarship (sponsor information suppressed)
+  * Major and Elective Coursework:
+    * CSCI 8945: Advanced Representation Learning (Fall 2024)
+    * GEOG 6591: Intro. to AI for GIS (Fall 2024)
+    * GEOG 6590: Programming for GIS (Fall 2024)
+    * CSCI 8820: Computer Vision and Pattern Recognition (Spring 2024)
+    * ENGR 8990: Special Topics in Engineering (Applications of Biometric Systems, Thirimachos Bourlai, Spring 2024)
+    * GEOG 8350: Machine Learning with Geospatial Big Data (Spring 2024)
     * ENGR 8990: Special Topics in Engineering (Machine Learning for Computer Vision, Guoyu Lu, Fall 2023)
-    * GEOG 6370: Intro to GIS (Fall 2023)
+    * GEOG 6370: Intro. to Geographic Information Science (Fall 2023)
 * B.S. in Statistics, University of Georgia, May 2023
 * B.B.A. in Finance, University of Georgia, May 2023
   * Honors and Scholarships:
