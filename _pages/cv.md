@@ -55,7 +55,7 @@ Education
 
 Projects
 ======
-<ul>{% for post in site.portfolio %}
+<ul>{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}</ul>
 
